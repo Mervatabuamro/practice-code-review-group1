@@ -23,7 +23,9 @@ The specific implementation of the `splitObject` function uses the
 `Object. keys()` and `Array.prototype.map()` methods to achieve the desired
 result. These methods were chosen because they provide a concise and readable
 way to iterate over the keys of the input object and create a new object for
-each key/value pair. Thanks to the callback function inside `newObj` that uses every element received by to separate, so in short terms iterates for every pair present and former by `keys` and `result`.
+each key/value pair. Thanks to the callback function inside `newObj` that uses
+every element received by to separate, so in short terms iterates for every pair
+present and former by `keys` and `result`.
 
 Implementation
 
@@ -39,9 +41,9 @@ const splitObject = (toSeparate = {}) => {
 ```
 
 This implementation uses the `Object. keys()` method to get an array of the
-input object's own enumerable properties, then uses the `keys.map()`
-method to iterate over the array of keys and create a new object for each
-key/value pair. The resulting array of objects is returned by the function.
+input object's own enumerable properties, then uses the `keys.map()` method to
+iterate over the array of keys and create a new object for each key/value pair.
+The resulting array of objects is returned by the function.
 
 There are other alternatives for implementing this function, such as using a
 `for` loop or the `Object. values()` method, but this specific implementation

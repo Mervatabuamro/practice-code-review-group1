@@ -12,16 +12,14 @@ const splitObject = require('./split-object'); // worked
     the main file should include only the exported function and jsdoc string
 */
 
-
 // This one isolates the key and value.
 
-function splitObject (toSeparate = {}) {
-const keys = Object.keys(toSeparate);
-  const result = keys.map() // this takes the keys to iterate over them
-
+function splitObject(toSeparate = {}) {
+  const keys = Object.keys(toSeparate);
+  const result = keys.map(); // this takes the keys to iterate over them
 }
 
-//const key = () 
+//const key = ()
 
 /* the object + [] refers to the value of certain key, something like that.
 so this next one is another function that does get the value of the actual key */
@@ -36,11 +34,10 @@ function createNewObject(key) {
 
 const splitObject = (toSeparate = {}) => {
   const keys = Object.keys(toSeparate);
-  const result = keys.map(function(key) {
+  const result = keys.map(function (key) {
     const newObj = {};
     newObj[key] = toSeparate[key];
     return newObj;
   });
   return result;
-}
-
+};

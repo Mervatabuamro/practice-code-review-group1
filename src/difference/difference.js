@@ -17,13 +17,12 @@
  * difference([1, 2, 1], [2, 3]); //  [1]
  */
 
-
 export function differenceArray(array, values) {
   // Create a Set from the second array to remove duplicates
   const set2 = new Set(values);
-  
+
   // Filter elements from the first array that are not in the second array
-  const result = array.filter(item => !set2.has(item));
-  
+  const result = array.filter((item) => !set2.has(item));
+
   return result;
 }

@@ -44,6 +44,6 @@
 
 <!--
   what cool things or general lessons has your team learned?
-  This can be about anything! code, collaboration, 
+  This can be about anything! code, collaboration,
   git, github, Belgian history, ...
 -->
